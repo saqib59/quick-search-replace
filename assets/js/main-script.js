@@ -4,12 +4,15 @@
         event.preventDefault();
     $(this).validate({
         rules: {
-            search_key: {required: true},
-            replace_key: {required: true},
+            'search_key': {required: true},
+            'replace_key': {required: true},
+            'post_types[]': {required: true},
+
         },
         messages: {
-            search_key: {required:'Please Enter Any key to search'},
-            replace_key: {required: 'Please Enter Any key to replace'},
+            'search_key': {required:'Please Enter Any key to search'},
+            'replace_key': {required: 'Please Enter Any key to replace'},
+            'post_types[]': {required: 'Please select any post type to continue'},
         }
 
     });

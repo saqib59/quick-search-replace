@@ -9,7 +9,6 @@ do_action('quick_search_scripts');
 				<p><?php _e('Make sure to backup your website database before you use this plugin!', 'search-replace'); ?></p>
 			</div>
 			<div class="card-body">
-				
 				<form action="" method="post" id="quick-search">
 					<div class="form-group row">
 						<div class="col-sm-12">
@@ -29,7 +28,7 @@ do_action('quick_search_scripts');
 								unset( $post_types['attachment'] );
 								foreach ( $post_types  as $post_type ) {
 									echo "<label>".$post_type->labels->singular_name;
-										echo '<input type="checkbox" value="'.$post_type->name.'" name="post_types[]" />';
+										echo '<input type="checkbox" value="'.$post_type->name.'" name="post_types[]" id="post_types" />';
 									echo "</label>";
 								}
 								?>
