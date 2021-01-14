@@ -17,6 +17,7 @@ class QuickSearchAndReplace{
 	}
 	function script_styles(){
 		echo '<link rel="stylesheet" href="'.QUICK_SEARCH_URL.'/assets/css/bootstrap.css">';
+		wp_enqueue_style('custom-css', QUICK_SEARCH_URL.'/assets/css/custom.css');
     	wp_enqueue_script( 'jquery-validate', QUICK_SEARCH_URL.'/assets/js/jquery-validate.js', '', '', true );
     	wp_enqueue_script( 'main-script', QUICK_SEARCH_URL.'/assets/js/main-script.js', '', '', true );
     	wp_localize_script('main-script', 'object',
