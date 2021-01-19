@@ -48,3 +48,19 @@ input[type=checkbox]:checked::before {
     border-radius: 10px;
     box-shadow: 0 0 5px 0 #2780e3;
 }
+.postcheckbox label:last-child {
+   border-right: 0;
+}
+
+.postcheckbox label:nth-child(2) {
+   margin-left: 0px !IMPORTANT;
+}
+
+.postcheckbox input[type=checkbox] {
+   margin-right: 20px;
+}
+
+.postcheckbox label {
+   margin-left: 20px;
+   border-right: 2px solid #000;
+.}
